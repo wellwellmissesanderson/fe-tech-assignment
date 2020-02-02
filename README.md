@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FE Tech Assignment
 
-## Available Scripts
+Welcome to Sycle! This document will provide you with instructions for the technical exercise.
 
-In the project directory, you can run:
+We realize that coding on the spot can be stressful and we're here to make it as easy for you to do your best. You have full access to the internet as a resource for this assignment. The interview facilitator (Heather) will also be present in the meeting room during this period to answer any questions you may have.
 
-### `yarn start`
+We welcome the chance to chat about approaches, as we think the concepts applied towards a piece of work are valued alongside the work itself. Don't hesitate to open up a conversation at any point during the assignment.
 
-Runs the app in the development mode.<br />
+You can opt to finish at anytime and we will finish this portion of the interview after _45 minutes maximum_.
+
+These tasks are meant to give us a better understanding of your strengths in the front-end domain. There are 3 branches ready to be checked out (using git, of course) and each branch contains specific tasks to complete.
+
+Please begin with **Task A**. If you have remaining time, please continue to ****Task B ***or ***Task C** (or both!).
+
+Instructions for running the app are included [below](#running-the-app)
+
+## Tasks
+
+1. **Task A:** `git checkout task-A-add-feature`
+    - Add filter option for Pull Requests. This may require researching the API documentation. Beware of the default pagination on response objects — we will not require modification of the default pagination for this assignment. The GitHub `issues/` API has a default result count of 30).
+    - Indicate whether an issue is *closed* or a *pull request* using the following icons:
+        - `@material-ui/icons/MergeType`
+        - `@material-ui/icons/TimerOff`
+
+        The icons should have any styles created so they fit reasonably well within the given theme. They should be displayed in a location that you think makes sense.
+
+    Note: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by the pull_request key.
+
+    Be aware that the id of a pull request returned from "Issues" endpoints will be an issue id. To find out the pull request id, use the "List pull requests" endpoint.
+
+    From: [https://developer.github.com/v3/issues/](https://developer.github.com/v3/issues/)
+
+2. **Task B:**
+    - Convert any single component that uses lifecycle methods to be a functional component.
+    - Add types to **AppService.js**  and **App.js** (rename files as appropriate)
+
+    This branch has typescript setup and ready to use.
+
+3. **Task C:** `git checkout task-debug`
+    - List any errors you find
+
+## Running the App
+
+Clone the repository at: [future location].
+
+Then, in the project directory, run:
+
+### `npm install` then `npm start`
+
+This runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Please see docs or ask your facilitator for any questions.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Good luck!
