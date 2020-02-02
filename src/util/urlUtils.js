@@ -4,7 +4,7 @@
  * @param {string} url          [The entire url.]
  * @param {string} hostname     [The hostname to use to split url.]
  */
-export const isValidDomain = (url, hostname) => {
+const isValidDomain = (url, hostname) => {
   return !url || url.indexOf(hostname) > -1;
 };
 
@@ -25,7 +25,7 @@ export const sanitizeUrl = (url) => {
  * @param {string} url          [The entire url.]
  * @param {string} hostname     [The hostname to use to split url.]
  */
-export const isValidRepoUrl = (url, hostname) => {
+const isValidRepoUrl = (url, hostname) => {
   if(!url || !hostname) {
     throw new Error('Could not find a valid repo at that location!');
   }
@@ -54,3 +54,17 @@ export const getPathsFromUrl = (url, hostname) => {
 
   return pathsList.join('/');
 };
+
+export const validateURL = (url, hostName) => {
+  if(!url) {
+    throw new Error('You\'ll have to enter a URL first!');
+  }
+
+  if(!isValidDomain(url, hostName)) {
+    throw new Error('Please enter a valid repo from github.com!');
+  };
+
+  if(!isValidRepoUrl(url, hostName)) {
+    throw new Error('Looks like that URL is not valid. \nIt should have the following format: https://github.com/<owner>/<name>');
+  }
+}
