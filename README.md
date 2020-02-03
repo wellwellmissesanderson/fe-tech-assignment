@@ -31,17 +31,23 @@ Instructions for running the app are included [below](#running-the-app)
     From: [https://developer.github.com/v3/issues/](https://developer.github.com/v3/issues/)
 
 2. **Task B:**
-    - Convert any single component that uses lifecycle methods to be a functional component.
-    - Add types to **AppService.js**  and **App.js** (rename files as appropriate)
+    - **(WIP - None of the components of this app really need hooks -- TODO for Monday for Heather to add something here).** Convert any single component that uses lifecycle methods to be a functional component.
+    - Add types to **AppService.js**  and **App.js** (rename files as appropriate)</br>
+        **Install TS dependencies:**
+        >  `npm install --save typescript @types/node @types/react @types/react-dom @types/jest`
 
-    This branch has typescript setup and ready to use.
+3. **Task C:** `git checkout task-B-debug`
+    - List any errors you find. The app is considered working when:
+        * User can toggle between light and dark mode
+        * Light/Dark preference is saved to localstorage
+        * Application is aware of browser and OS setting and inherits if no previous setting has been selected
 
-3. **Task C:** `git checkout task-debug`
-    - List any errors you find
+    ![working version](./public/task-b-goal.gif)
+    ![OS-aware](./public/task-b-inherits-OS-settings.gif)
 
 ## Running the App
 
-Clone the repository at: [future location].
+Clone the repository at: [future location that isn't my github].
 
 Then, in the project directory, run:
 
@@ -51,8 +57,5 @@ This runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Please see docs or ask your facilitator for any questions.
-
 
 Good luck!
