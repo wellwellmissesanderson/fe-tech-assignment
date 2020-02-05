@@ -30,13 +30,14 @@ Instructions for running the app are included [below](#running-the-app)
 
     From: [https://developer.github.com/v3/issues/](https://developer.github.com/v3/issues/)
 
-2. **Task B:**
-    - **(WIP - None of the components of this app really need hooks -- TODO for Monday for Heather to add something here).** Convert any single component that uses lifecycle methods to be a functional component.
+    <br />
+    **Task A optional:**
+    - Convert any single component that uses lifecycle methods to be a functional component. Use hooks if appropriate.
     - Add types to **AppService.js**  and **App.js** (rename files as appropriate)</br>
         **Install TS dependencies:**
         >  `npm install --save typescript @types/node @types/react @types/react-dom @types/jest`
 
-3. **Task C:** `git checkout task-B-debug`
+3. **Task B:** `git checkout task-B-debug`
     - List any errors you find. The app is considered working when:
         * User can toggle between light and dark mode
         * Light/Dark preference is saved to localstorage
